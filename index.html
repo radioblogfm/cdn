@@ -17,12 +17,14 @@
   <source src="https://streaming.radiovikin.ga/v3mfh0d2w2quv" type="audio/mpeg">
 </audio>
   
-  <script>//<![CDATA[
-const players = Array.from(document.querySelectorAll('.js-player')).map(player => new Plyr(player));
-//]]></script>
+ 
   
   <iframe src="https://cdn.radiovikin.ga/metadata.html" frameborder="0" marginwidth="0" scrolling="no" width="100%" height="60"></iframe>
   
- <script src="https://cdn.plyr.io/3.6.4/plyr.js"></script> </p>
+  </p>
+  <script src="https://cdn.plyr.io/3.6.4/plyr.js"></script>
+   <script>//<![CDATA[
+const players = Array.from(document.querySelectorAll('.js-player')).map(player => new Plyr(player));
+//]]></script>
 </body>
 </html>
