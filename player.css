@@ -1,0 +1,36 @@
+@import url(https://indestructibletype-fonthosting.github.io/jost.css);
+
+body {
+	font-family: 'Jost*', sans-serif  !important;
+	font-feature-settings: "lnum" 1 !important;
+}
+a {
+	color: #d11415;
+	font-weight: bold;
+	text-decoration: none;
+}
+a:active,
+a:focus,
+a:hover {
+	color: inherit;
+	outline: none;
+}
+a:focus {
+	outline: 2px solid #ddd;
+}
+a:visited {
+	font-weight: normal;
+}
+
+img#radioPoster {
+	width: 100%;
+	height: auto; 
+	box-shadow: 7px 10px 29px -8px rgba(0,0,0,0.55); 
+	-webkit-box-shadow: 7px 10px 29px -8px rgba(0,0,0,0.55); 
+	-moz-box-shadow: 7px 10px 29px -8px rgba(0,0,0,0.55); 
+}
+
+audio {
+	width: 100%;
+	height: 30px;
+}
