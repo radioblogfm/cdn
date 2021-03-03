@@ -4,7 +4,7 @@
 <head>
 <meta charset="utf-8">
 <title>Radio Vikinga - SIN LIMITES</title>
-<link rel="stylesheet" href="//vjs.zencdn.net/7.6.6/video-js.min.css"/>
+<link rel="stylesheet" href="https://cdn.plyr.io/3.6.4/plyr.css"/>
 </head>
 
 <body style="background: #474747;background-color: #474747;  background-size: 100px 4px;">
@@ -12,16 +12,17 @@
   <img src="https://2.bp.blogspot.com/-nnBLpeHVPOQ/YD7kDy-qb3I/AAAAAAAAEFM/arKNF7Dcqpk6k14I0KesvIt_ZKwoKWJTACK4BGAYYCw/s150/cropped-vikin-1.png"  alt="VIKINGA" width="150"/><br>
   
 
-  <audio class="video-js vjs-fluid" controls  data-setup='{ 
-        "autoplay": true, 
-        }' preload="auto" width="100%" height="25" poster="thumbnail.jpg">
+
+  <audio class='js-player' controls autoplay>
   <source src="https://streaming.radiovikin.ga/v3mfh0d2w2quv" type="audio/mpeg">
-  </audio>
+</audio>
   
-  
+  <script>//<![CDATA[
+const players = Array.from(document.querySelectorAll('.js-player')).map(player => new Plyr(player));
+//]]></script>
   
   <iframe src="https://cdn.radiovikin.ga/metadata.html" frameborder="0" marginwidth="0" scrolling="no" width="100%" height="60"></iframe>
   
-  <script src="//vjs.zencdn.net/7.6.6/video.min.js"></script> </p>
+ <script src="https://cdn.plyr.io/3.6.4/plyr.js"></script> </p>
 </body>
 </html>
