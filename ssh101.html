@@ -1,0 +1,259 @@
+<!doctype html>
+<html lang="en">
+<head>
+<title>SSH101 -  Watch  Online</title>
+<style media="screen" 
+ type="text/css">
+		html,body { height:100%; width:100%; padding:0; margin:0; color:#999999; overflow: hidden; background:#000000 }
+		#player  {
+		height:100%;
+		max-height: 100%;
+		width:100%; padding:0; margin:0px;
+		}
+			 
+.wrapper {
+	   height:100%;
+		width:100%; padding:0; margin:0px;
+}
+ 		</style>
+		
+		 <script language="JavaScript"> 
+function fullScreen(theURL) { 
+window.open(theURL, '', 'fullscreen=yes, scrollbars=no'); 
+} 
+// End --> 
+</script> 
+
+ <script type="text/javascript">      
+ function   FullScreenMode()
+ {        
+// jwplayer("video").setFullscreen(true);
+ var win = window.open("", "full", "dependent=yes, fullscreen=yes");        
+ win.location = window.location.href;        
+ window.opener = null;    
+ }       
+ 
+ </script> 
+ <style type="text/css">
+html {
+overflow:hidden;
+}
+</style>
+
+
+<link rel="stylesheet" type="text/css" href="https://ssh101.com/fplayer/7.2.7/skin/skin.css">
+<script src="//code.jquery.com/jquery-1.11.2.min.js"></script>
+<script src="https://ssh101.com/fplayer/7.2.7/flowplayer.min.js"></script>
+<script src="https://ssh101.com/fplayer/7.2.7/flowplayer.set.js"></script>
+<script src="https://ssh101.com/fplayer/7.2.7/hls.light.min.js"></script>
+ 
+<style type="text/css">
+html,body { font: 12px "Myriad Pro", "Lucida Grande", sans-serif; text-align: center; padding: 0%;  margin: 0; }
+</style>
+
+<script language="JavaScript">
+$(function() {
+	var zIndexNumber = 1000;
+	$('div').each(function() {
+		$(this).css('zIndex', zIndexNumber);
+		zIndexNumber -= -10;
+	});
+});
+</script>
+   
+
+<style>
+.flowplayer {
+  background: #000000 !important;
+  background-color: #000000  !important;
+  margin-bottom: 0px;
+
+ padding-top 41.67%;
+ background-image: url(/images/ssh101.jpg) ;
+ background-size: 100% 100%; 
+ 
+ /* make iframe fill wrapper */
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+@media(-webkit-min-device-pixel-ratio: 2), (min-resolution: 2dppx) {
+  .flowplayer {
+    background-image: url(/images/ssh101.jpg);
+  }
+}
+
+.flowplayer.is-error .fp-message {
+  background-image: url(/images/ssh101-notfound.jpg);
+   background-size: 100% 100%; 
+  background-size: contain;
+  background-repeat: no-repeat;
+   /* make iframe fill wrapper */
+   Font-size:50px;
+   vertical-align: middle;
+   color:#ff0000;
+     text-shadow: 2px 2px #111111;
+   text-align:center;
+  position: absolute;
+  font-weight:bold;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+  
+}
+.flowplayer.is-error .fp-message h2,
+.flowplayer.is-error .fp-message p {
+  font-weight: bold;
+  color: #000;
+  text-shadow: 1px 1px #fff
+}
+.flowplayer.is-error .fp-message h2 {
+  font-size: 200%;
+}
+.flowplayer.is-error .fp-message p {
+  font-size: 150%;
+}
+.flowplayer.is-mouseout .fp-ui {
+  cursor: none !important;
+}
+
+.flowplayer .fp-logo {
+  /* logo always visible, even on origin domain */
+  display: block;
+  opacity: 0.3 !important;
+ 
+  left: auto; /* avoid logo being stuck on left side */
+ left:1.5%;
+  top: 5px;
+fullscreenOnly: true;
+}
+
+
+</style>
+
+<script>
+//if (!hasFlash())
+//{
+    //var script = document.createElement('script');
+    //script.src = '/fplayer/flowplayer.hlsjs.min.js';
+    //document.write(script.outerHTML);
+//}
+/*
+flowplayer.set({
+swf: "/fplayer/flowplayer.swf",
+swfHls: "/fplayer/flowplayerhls.swf"
+});
+flowplayer("#player", {
+  autoplay: true,
+  autoHide: true,
+  
+});
+*/
+flowplayer.conf = {
+ fullscreen: true,
+ share: false,
+ // iOS allows only native fullscreen from within iframes
+  native_fullscreen: true
+};
+
+
+flowplayer(function (api, root) {
+  var alertTimeout; // for optional alert
+ 
+  api.on("error", function (e, api, err) {
+    if (err.code === 4) { // Video file not found
+      // reset state
+      api.error = api.loading = false;
+      $(".fp-message", root).css({opacity: 0});
+      $(root).removeClass("is-error");
+ 
+      // load safe replacement video sources
+      api.load({
+        sources: [
+             { type: "video/mp4",   src: "//swf.livestreamingcdn.com/iframe/novideo.mp4" }
+        ]
+ 
+      }, function (e, api) {
+        // optional: notify user
+        $(".fp-message:first", root).remove();
+        api.message("SSH101.com FREE Streaming is Offline");
+        // change timeline color to alert user
+        $(root).addClass("replacement");
+        alertTimeout = setTimeout(function () {
+          $(".fp-message:first", root).remove();
+        }, 3000);
+ 
+      });
+ 
+    }
+  }).on("unload", function () {
+    // remove optional custom message to avoid duplication on reload
+    clearTimeout(alertTimeout);
+    $(".fp-message:first", root).remove();
+ 
+  });
+});
+</script>
+
+ 
+
+
+</head>
+<body topmargin="0" leftmargin="0" bottommargin="0" alink="#367FDF"  link="#367FDF" marginheight="0" marginwidth="0" vlink="#367FDF"  style="overflow:hidden;" scroll="no" > 
+<div data-dvr="true"  data-poster="/images/ssh101.jpg"  data-embed="false" data-shareable="false" data-fasebook="false" class="flowplayer"  data-fullscreen="true" data-native_fullscreen="true" data-key="$198551750325855">
+<div class='videocontent'>
+<div id='fp' class='flowplayer fp-outlined fp-mute'></div>
+
+<!--- <div id="hitinfo">
+Today View:   Total View: </div> --->
+</div>
+</div>
+
+
+
+<script>
+flowplayer("#fp", {
+    key: '$484500622742150',
+    poster: 'default.png',
+	 native_fullscreen: true,
+	 logo: '/logo120.png',
+    ratio: 0.5625,
+    live: true,
+    dvr: false,
+    autoplay: true,
+    embed: false,
+    title: 'SSH101.com',
+    clip: {
+        sources: [{ type: "application/x-mpegurl", src: "https://tna5.bozztv.com/vibratv/index.m3u8", dvr: true}],
+        autoplay: true,
+        }
+  });
+</script>
+
+<!-- Default Statcounter code for Ssh101.com Live Player
+http://ssh101.com/live -->
+<script type="text/javascript">
+var sc_project=12366682; 
+var sc_invisible=1; 
+var sc_security="0ef72411"; 
+</script>
+<script type="text/javascript"
+src="https://www.statcounter.com/counter/counter.js"
+async></script>
+<noscript><div class="statcounter"><a title="Web Analytics"
+href="https://statcounter.com/" target="_blank"><img
+class="statcounter"
+src="https://c.statcounter.com/12366682/0/0ef72411/1/"
+alt="Web Analytics"></a></div></noscript>
+<!-- End of Statcounter Code -->
+
+ 
+ 
+</body>
+</html>
