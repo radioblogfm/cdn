@@ -3,6 +3,9 @@
 <html>
 	<head>
 		<title>Vibra TV #BuenaVibra</title>
+		 <script type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/clappr@latest/dist/clappr.min.js">
+  </script>
 
 <style>
 	body {
@@ -24,12 +27,18 @@
 		</style>
 	</head>
 	<body>
+		
+  <div id="player"></div>
+  <script>
+    var player = new Clappr.Player({source: "https://live.autistici.org/hls/vibratelevision.m3u8", parentId: "#player"});
+  </script>
 
-	<div class="embed-container">						
+
+	<!--<div class="embed-container">						
  <iframe  src ='//www.opencaster.com/radioblogfm-100-100'   frameborder='0'
   allow="autoplay"
   scrolling="no" target="_blank" allowfullscreen="yes"></iframe>
-		</div>
+		</div>-->
 
 	</body>
 </html>
