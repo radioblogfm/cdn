@@ -51,10 +51,31 @@ video {
 	</head>
 	<body>
 		
+		
  <div id="player" class="player-container"></div>
-  <script>
-    var player = new Clappr.Player({source: "https://live.autistici.org/hls/vibratelevision.m3u8", parentId: "#player"});
-  </script>
+      <script id="rendered-js" >
+var player = new Clappr.Player({
+  // Pin-hole style camera - add ?hi or ?lo to explicitly pick a stream
+  //source: 'https://jcu.io/hls/22409771-b422-b681-4fa1-3ea80b70ca1b.m3u8',
+
+  // Tank camera - add ?hi or ?lo to explicitly pick a stream
+  source: 'https://live.autistici.org/hls/vibratelevision.m3u8',
+  maxBufferLength: 30,
+  autoPlay: true,
+  parentId: '#player',
+  width: '100%',
+  height: '100%',
+  mute: true,
+  hideVolumeBar: true,
+  autoPlayVisible: 'partial',
+  position: 'bottom-right',
+  watermarkLink: 'https://www.autistici.org/' });
+//# sourceURL=pen.js
+    </script>
+
+		
+
+
 
 
 	<!--<div class="embed-container">						
