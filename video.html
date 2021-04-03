@@ -24,14 +24,27 @@
     width: 100%;
     height: 100%;
 }
+	
+	      .player {
+        width: 640px;
+        height: 360px;
+      }
 		</style>
 	</head>
 	<body>
+
 		
-  <div id="player"></div>
-  <script>
-    var player = new Clappr.Player({source: "https://live.autistici.org/hls/vibratelevision.m3u8", parentId: "#player"});
-  </script>
+		    <div class="app">
+        <div class="player"></div>
+    </div>
+    <script>
+      var player = new Clappr.Player({
+        source: 'https://live.autistici.org/hls/vibratelevision.m3u8',
+        parent: '.player',
+        height: '100%',
+        width: '100%'
+      });
+    </script>
 
 
 	<!--<div class="embed-container">						
