@@ -1,0 +1,23 @@
+<script language="JavaScript">
+width="300";
+height="250";
+
+banners = new Array();
+banners[0]= new Array("https://i.imgur.com/LLyY4U2.gif","https://vibratv.radiovikin.ga");
+banners[1]= new Array("https://i.imgur.com/3bEI3j3.jpeg","https://streamme.ga");
+banners[2]= new Array("https://i.imgur.com/cAw6CnL.gif","https://vibratv.radiovikin.ga");
+banners[3]= new Array("https://i.imgur.com/4pMvkpE.jpeg","https://discord.gg/tAjfYQsUuY");
+
+totalbanners = banners.length;
+var ahora = new Date()
+var segundos = ahora.getSeconds()
+var ad = segundos % totalbanners;
+seleccionado=banners[ad][0];
+enlace=banners[ad][1];
+
+document.write('<center>');
+document.write('<a href='+enlace+' target="_blank">');
+document.write('<img src='+seleccionado+' width='+width+' height='+height+' border="0">');
+document.write('</a>');
+document.write('</center>');
+</script>
