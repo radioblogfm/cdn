@@ -1,12 +1,11 @@
-<script language='JavaScript'>
-  
-width='160';
-height='600';
+<script language="JavaScript">
+width="160";
+height="600";
 
 banners = new Array();
-banners[0]= new Array('https://i.imgur.com/a6lFHng.jpg','https://www.radiovikin.ga/p/en-directo.html');
-banners[1]= new Array('https://i.imgur.com/cVTo38y.jpg','https://vibratv.radiovikin.ga');
-banners[2]= new Array('https://i.imgur.com/KtCuxbK.png','https://www.radiovikin.ga/p/contacto.html');
+banners[0]= new Array("https://i.imgur.com/a6lFHng.jpg","https://www.radiovikin.ga/p/en-directo.html");
+banners[1]= new Array("https://i.imgur.com/cVTo38y.jpg","https://vibratv.radiovikin.ga");
+banners[2]= new Array("https://i.imgur.com/KtCuxbK.png","https://www.radiovikin.ga/p/contacto.html");
 
 totalbanners = banners.length;
 var ahora = new Date()
@@ -16,9 +15,8 @@ seleccionado=banners[ad][0];
 enlace=banners[ad][1];
 
 document.write('<center>');
-document.write('<a href='+enlace+' target='_blank'>');
-document.write('<img src='+seleccionado+' width='+width+' height='+height+' border='0'>');
+document.write('<a href='+enlace+' target="_blank">');
+document.write('<img src='+seleccionado+' width='+width+' height='+height+' border="0">');
 document.write('</a>');
 document.write('</center>');
-  
 </script>
