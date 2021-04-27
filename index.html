@@ -1,50 +1,90 @@
 
+
+
+<!DOCTYPE html>
+<html lang="es-ES">
+<head>
+<meta charset="utf-8">
+<title>Radio Vikinga</title>
+<meta name="description" content="Radio Vikinga">
+<meta name="robots" content="index, follow">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" type="image/png" href="/assets/img/favicon.png" />
+<link rel="image_src" href="/assets/img/favicon.png" />
+<link rel="SHORTCUT ICON" href="/assets/img/favicon.png" type="image/png" />
+<meta property="og:type" content="website" />
+<meta property="og:title" content="Radio Vikinga" />
+<meta property="og:description" content="Listen live to Radio Vikinga" />
+<meta property="og:url" content="http://cdn.radiovikin.ga/" />
+<meta property="og:site_name" content="Radio Vikinga" />
+<meta property="og:image" content="/assets/img/favicon.png" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:description" content="Listen live to Radio Vikinga" />
+<meta name="twitter:title" content="Listen live to Radio Vikinga" />
+<meta name="twitter:site" content="@RCAST" />
+<meta name="twitter:url" value="http://cdn.radiovikin.ga/" />
+<meta name="twitter:image" content="/assets/img/favicon.png" />
+<meta name="twitter:creator" content="@RCAST" />
+  
   <script src="https://cdn.radiovikin.ga/jquery-3.2.1.min.js"></script>
 <script src="https://cdn.radiovikin.ga/lunaradio-sincors.js"></script> 
   
 
 
+</head>
+<body style="background-color:rgba(33,33,33,1);color:rgba(255,255,255,1);margin: 0;">
+<div id="radioplayer" style='width:100%; height:450px;
+background-color:rgba(33,33,33,1);
+-webkit-border-top-left-radius: 0px;
+-webkit-border-top-right-radius: 0px;
+-webkit-border-bottom-right-radius: 0px;
+-webkit-border-bottom-left-radius: 0px;
+-moz-border-radius-topleft: 0px;
+-moz-border-radius-topright: 0px;
+-moz-border-radius-bottomright: 0px;
+-moz-border-radius-bottomleft: 0px;
+border-top-left-radius: 0px;
+border-top-right-radius: 0px;
+border-bottom-right-radius: 0px;
+border-bottom-left-radius: 0px;
+border: none;'>
+</div>
 
-  
-  <div id="lunaradio" style="width:100%; height:100%;background: #000000 url(https://cdn.radiovikin.ga/99840.jpg) bottom / cover no-repeat;">Cargando...</div>
-
-<script>
-  $("#lunaradio").lunaradio({
-  userinterface: "Big",
-  backgroundcolor: "#000000",
-  fontcolor: "#f2f2f2",
-  hightlightcolor: "#ff4b5c",
-  fontname: "Anton",
-  googlefont: "Anton&display=swap",
-  fontratio: "0.8",
-  radioname: "RADIO VIKINGA [EN DIRECTO]", //nombre de radio
-  scroll: "true",
-  coverimage: "https://cdn.radiovikin.ga/141708002_3148957258538579_5013965394637032002_n.jpg", //link o ruta de logo radio
-  onlycoverimage: "false", //true para mostrar solo logo radio
-  coverstyle: "animated",
-  usevisualizer: "real",
-  visualizertype: "8",
-  metadatatechnic: "corsproxy",
-  ownmetadataurl: "",
-  usestreamcorsproxy: "false", //true o false
-  corsproxy: "",
-  streamurl: "https://stream.rcast.live/66600",
-  streamtype: "shoutcast2",
-  icecastmountpoint: "",
-  shoutcastpath: "/66600",
-  shoutcastid: "1",
-  streamsuffix: "",
-  radionomyid: "",
-  radionomyapikey: "",
-  radiozenoid: "",
-  radiojarid: "",
-  radiocoid: "",
-  itunestoken: "1000lIPN",
-  metadatainterval: "20000",
-  volume: "100",
-  debug: "false",
-  autoplay: "true"
-  });
+<script type="text/javascript">
+$("#radioplayer").radioplayer({
+userinterface: "big",
+backgroundcolor: "rgba(0,0,0,0)",
+fontcolor: "#ffffff",
+hightlightcolor: "#dd5110",
+fontname: "Advent Pro",
+googlefont: "Advent Pro:300",
+fontratio: "0.4",
+radioname: "Radio Vikinga",
+scroll: "true",
+coverimage: "https://players.rcast.net/uploads/images/img_x300_60236620b6f48.jpg",
+onlycoverimage: "false",
+coverstyle: "circle",
+usevisualizer: "real",
+visualizertype: "5",
+itunestoken: "",
+metadatatechnic: "ownmetadataurl",
+ownmetadataurl: "https://players.rcast.net/status/66600",
+artworkurl: "https://players.rcast.net/artwork/66600",streamurl: "https://stream.rcast.net/66600",
+streamtype: "icecast2",
+icecastmountpoint: "",
+radionomyid: "",
+radionomyapikey: "",
+radiojarid: "",
+radiocoid: "zxZ",
+shoutcastpath: "",
+shoutcastid: "1",
+streamsuffix: "",
+metadatainterval: "30000",
+volume: "99",
+debug: "false",
+usestreamcorsproxy: "false",
+corsproxy: "",
+});
 </script>
-
-
+</body>
+</html>
