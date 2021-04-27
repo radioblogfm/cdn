@@ -59,7 +59,54 @@ hightlightcolor: "#dd5110",
 fontname: "Advent Pro",
 googlefont: "Advent Pro:300",
 fontratio: "0.4",
-radioname: "Radio Vikinga",
+radioname: "Radio Vikinga",  <script src="https://cdn.radiovikin.ga/jquery-3.2.1.min.js"></script>
+<script src="https://cdn.radiovikin.ga/lunaradio-sincors.js"></script> 
+  
+
+
+
+  
+  <div id="lunaradio" style="width:100%; height:100%;background: #000000 url(https://cdn.radiovikin.ga/99840.jpg) bottom / cover no-repeat;">Cargando...</div>
+
+<script>
+  $("#lunaradio").lunaradio({
+  userinterface: "Big",
+  backgroundcolor: "#000000",
+  fontcolor: "#f2f2f2",
+  hightlightcolor: "#ff4b5c",
+  fontname: "Anton",
+  googlefont: "Anton&display=swap",
+  fontratio: "0.8",
+  radioname: "RADIO VIKINGA [EN DIRECTO]", //nombre de radio
+  scroll: "true",
+  coverimage: "https://players.rcast.net/uploads/images/img_x300_60236620b6f48.jpg", //link o ruta de logo radio
+  onlycoverimage: "false", //true para mostrar solo logo radio
+  coverstyle: "animated",
+  usevisualizer: "real",
+  visualizertype: "8",
+  metadatatechnic: "ownmetadataurl",
+  ownmetadataurl: "https://players.rcast.net/status/66600",
+  usestreamcorsproxy: "false", //true o false
+  corsproxy: "",
+  streamurl: "https://stream.rcast.live/66600",
+  streamtype: "icecast2",
+  icecastmountpoint: "",
+  shoutcastpath: "",
+  shoutcastid: "1",
+  streamsuffix: "",
+  radionomyid: "",
+  radionomyapikey: "",
+  radiozenoid: "",
+  radiojarid: "",
+  radiocoid: "zxZ",
+  itunestoken: "1000lIPN",
+  metadatainterval: "30000",
+  volume: "100",
+  debug: "false",
+  autoplay: "true"
+  });
+</script>
+
 scroll: "true",
 coverimage: "https://players.rcast.net/uploads/images/img_x300_60236620b6f48.jpg",
 onlycoverimage: "false",
