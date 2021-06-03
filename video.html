@@ -2,9 +2,11 @@
 
 <html>
 	<head>
-		<title>Vibra TV #BuenaVibra</title>
-
-
+		<title>PLAYER VIDEO</title>
+<link href="https://unpkg.com/video.js/dist/video-js.css" rel="stylesheet">
+<script type="text/javascript" src ="https://unpkg.com/video.js/dist/video.js"></script>
+		<script src="https://unpkg.com/videojs-contrib-hls/dist/videojs-contrib-hls.js"></script> 
+		
 <style>
 	body {
   background-color: #000000;
@@ -37,25 +39,23 @@ body {
 }
 
 
-.player-container {
-  width: 100%;
-  height: 100%;
-}
 
-video {
-  object-fit: contain;
-}
 		</style>
 	</head>
 	<body>
 		
-              
 		
- <div class="embed-container">						
+
+	
+<video id=vikinga-video  keyLicencia="2899621VIKINGA" crossorigin="anonymous"  class="video-js vjs-fluid vjs-default-skin" autoplay controls poster=''><source src="https://live.admefy.com/live/default/shiny_silver_49d7a.m3u8" type="application/x-mpegURL"></video>              <script>      (function(window, videojs) {        var player = window.player = videojs('vikinga-video');          return false;        }      (window, window.videojs));    </script>
+	
+
+<!-- <div class="embed-container">						
  <iframe  src ='//vk.com/video_ext.php?oid=-204866133&id=456239038&hash=0d32931fdb5ea5d1&hd=2'   frameborder='0'
   allow="autoplay"
   scrolling="no" target="_blank" allowfullscreen="yes"></iframe>
-		</div> 
+		</div> -->
 
 	</body>
 </html>
+
