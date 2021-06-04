@@ -3,12 +3,4 @@
 #EXT-X-MEDIA-SEQUENCE:1326
 #EXT-X-TARGETDURATION:9
 #EXTINF:7.397, no desc
-https://live.admefy.com/live/default/shiny_silver_49d7a-1622767002696.ts
-#EXTINF:6.778, no desc
-https://live.admefy.com/live/default/shiny_silver_49d7a-1622766687511.ts
-#EXTINF:7.640, no desc
-https://live.admefy.com/live/default/shiny_silver_49d7a-1622766693816.ts
-#EXTINF:7.746, no desc
-https://live.admefy.com/live/default/shiny_silver_49d7a-1622766701346.ts
-#EXTINF:7.031, no desc
-https://live.admefy.com/live/default/shiny_silver_49d7a-1622766709208.ts
+https://live.admefy.com/live/default/shiny_silver_49d7a.m3u8
