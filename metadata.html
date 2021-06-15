@@ -1,38 +1,33 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
-
-<meta http-equiv="refresh" content="25" />
-
+<!DOCTYPE html>
+<html>
+  
 <head>
-
-<style>
-
-      p.tema {
-          font-family: Arial;
-		  font-weight: bold;
-		  font-size: .7em;
-          color: black;
-          margin: 0px 0px 0px 0px;
-      }  
-
-</style>
-
-<script type="text/javascript" src="jquery.min.js"></script>
-
-<script type="text/javascript" charset="utf-8" src="selectsong.js"></script>
-
-
+    <title>
+        How to get HTML content of 
+        an iFrame using javascript?
+    </title>
 </head>
+  
 <body>
-	<center>
-<div style="text-align: center;">
-<MARQUEE BEHAVIOR=ALTERNATE>
-	<div style="font-family: Arial; font-weight: bold; font-size: .90em; color: black;" id='song_name'></div></MARQUEE><br/></center>
-
-
-
-	
-
-	
+    <iframe id="frameID" src=
+        "//players.rcast.net/status/66600">
+    </iframe>
+  
+    <a href="#" onclick=
+        "getIframeContent('frameID');">
+        Get the content of Iframe
+    </a>
+  
+    <script>
+        function getIframeContent(frameID) {
+            var frameObj = 
+                document.getElementById(frameID);
+            var frameContent = frameObj
+                .contentWindow.document.body.innerHTML;
+  
+            alert("frame content : " + frameContent);
+        }
+    </script>
 </body>
-</html> 
+  
+</html>
