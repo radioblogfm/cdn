@@ -8,7 +8,7 @@ function check_if_modified()
 {
     $.ajax({
     type: 'HEAD',
-    url: 'CurrentSong.txt',
+    url: 'https://players.rcast.net/status/66600',
     contentType: 'application/x-www-form-urlencoded; charset=UTF-8',
     dataType: 'text',
     async: true,
