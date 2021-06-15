@@ -5,13 +5,7 @@
     <title>
 METADATA
     </title>
-</head>
-  
-<body>
-
-<iframe id="CurrentSong" src="//players.rcast.net/status/66600"></iframe>
-
-<script>
+  <script>
 var frame = document.getElementById('CurrentSong');
     frame.onload = function () {
         var body = frame.contentWindow.document.querySelector('body');
@@ -20,6 +14,13 @@ var frame = document.getElementById('CurrentSong');
         body.style.lineHeight = '20px';
     };
 </script>
+</head>
+  
+<body>
+
+<iframe id="CurrentSong" src="//players.rcast.net/status/66600"></iframe>
+
+
 </body>
   
 </html>
