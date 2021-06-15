@@ -6,19 +6,13 @@
 METADATA
     </title>
   <script>
-var frame = document.getElementById('CurrentSong');
-    frame.onload = function () {
-        var body = frame.contentWindow.document.querySelector('body');
-        body.style.color = 'red';
-        body.style.fontSize = '20px';
-        body.style.lineHeight = '20px';
-    };
+$('#currentsong').load("//players.rcast.net/status/66600");
 </script>
 </head>
   
 <body>
 
-<iframe id="CurrentSong" src="//players.rcast.net/status/66600"></iframe>
+<p id="currentsong"></p>
 
 
 </body>
