@@ -3,31 +3,23 @@
   
 <head>
     <title>
-        How to get HTML content of 
-        an iFrame using javascript?
+METADATA
     </title>
 </head>
   
 <body>
-    <iframe id="frameID" src=
-        "//players.rcast.net/status/66600">
-    </iframe>
-  
-    <a href="#" onclick=
-        "getIframeContent('frameID');">
-        Get the content of Iframe
-    </a>
-  
-    <script>
-        function getIframeContent(frameID) {
-            var frameObj = 
-                document.getElementById(frameID);
-            var frameContent = frameObj
-                .contentWindow.document.body.innerHTML;
-  
-            alert("frame content : " + frameContent);
-        }
-    </script>
+
+<iframe id="CurrentSong" src="//players.rcast.net/status/66600"></iframe>
+
+<script>
+var frame = document.getElementById('CurrentSong');
+    frame.onload = function () {
+        var body = frame.contentWindow.document.querySelector('body');
+        body.style.color = 'red';
+        body.style.fontSize = '20px';
+        body.style.lineHeight = '20px';
+    };
+</script>
 </body>
   
 </html>
