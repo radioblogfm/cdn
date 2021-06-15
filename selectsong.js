@@ -8,7 +8,7 @@ function check_if_modified()
 {
     $.ajax({
     type: 'HEAD',
-    url: 'https://players.rcast.net/status/66600',
+    url: '//players.rcast.net/status/66600',
     contentType: 'application/x-www-form-urlencoded; charset=UTF-8',
     dataType: 'text',
     async: true,
@@ -25,7 +25,7 @@ function update_song()
 {
     $.ajax({
     type: 'GET',
-    url: 'https://players.rcast.net/status/66600',
+    url: '//players.rcast.net/status/66600',
     contentType: 'application/x-www-form-urlencoded; charset=UTF-8',
     cache: false,
     dataType: 'text',
