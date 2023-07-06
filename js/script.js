@@ -14,7 +14,7 @@ const musicData = [
     album: "No Spirit",
     year: 2022,
     artist: "No Spirit x Tonion",
-    musicPath: "./assets/music/music-1.mp3",
+    musicPath: "https://stream.zeno.fm:443/idqecp6rhbnvv.mp3",
   },
   {
     backgroundImage: "./assets/images/poster-2.jpg",
