@@ -14,58 +14,75 @@
 	
 <body>
 
-<div id="lunaradio" style="width:100%; height:600px;"></div>
-<script>
-jQuery(document).ready(function($) {
-	$("#lunaradio").lunaradio({
-		token: "",
-		userinterface: "big",
-		backgroundcolor: "rgba(14,16,21,0.5)",
-		fontcolor: "#ffffff",
-		hightlightcolor: "#fa225b",
-		fontname: "",
-		googlefont: "",
-		fontratio: "0.4",
-		radioname: "LA ZONA",
-		scroll: "true",
-		coverimage: "LAZONABANNER.png",
-		onlycoverimage: "false",
-		coverstyle: "square",
-		usevisualizer: "real",
-		visualizertype: "5",
-		multicolorvisualizer: "false",
-		color1: "#e66c35",
-		color2: "#d04345",
-		color3: "#85a752",
-		color4: "#067dcc",
-		visualizeropacity: "0.9",
-		itunestoken: "1000lIPN",
-		metadatatechnic: "directly",
-		ownmetadataurl: "",
-		streamurl: "https://stream.zeno.fm:443",
-		streamtype: "icecast2",
-		icecastmountpoint: "/idqecp6rhbnvv.mp3",
-		radionomyid: "",
-		radionomyapikey: "",
-		radiojarid: "",
-		radiocoid: "",
-		shoutcastpath: "",
-		shoutcastid: "1",
-		streamsuffix: "",
-		metadatainterval: "20000",
-		volume: "90",
-		debug: "false",
-		autoplay: "false",
-		displayliveicon: "true",
-		displayvisualizericon: "true",
+
+<body style="margin:0px">
+
+<div id="lunaradio" style='width:100%; height:100%;background-image: url("fondo.png"); background-repeat: no-repeat; background-size: cover; background-position: center;
+-webkit-border-top-left-radius: 0px;
+  -webkit-border-top-right-radius: 0px;
+  -webkit-border-bottom-right-radius: 0px;
+  -webkit-border-bottom-left-radius: 0px;
+  -moz-border-radius-topleft: 0px;
+  -moz-border-radius-topright: 0px;
+  -moz-border-radius-bottomright: 0px;
+  -moz-border-radius-bottomleft: 0px;
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+  border: none;'>
+<div a href="RADIO PRO" title="RADIO PRO"></a>  <a href="CHAN" title="SEOMARCA"></a></div>
+
+
+<script src="js/jquery-3.2.1.min.js" type="3bc5e4e5245e387f3290c38f-text/javascript"></script>
+<script src="js/lunaradio.min.js" type="3bc5e4e5245e387f3290c38f-text/javascript"></script>
+
+<div id="lunaradio" style="width:100%; height:550px;"></div>
+
+<script type="3bc5e4e5245e387f3290c38f-text/javascript">
+$("#lunaradio").lunaradio({
+	
+	userinterface: "big",
+	backgroundcolor: "rgba(9,15,25,0.8)",
+	fontcolor: "#ffffff",
+	hightlightcolor: "#65b633",
+	fontname: "Saira Condensed",
+	googlefont: "Saira+Condensed:wght@100",
+	fontratio: "0.3",
+	radioname: "LA ZONA ",
+	scroll: "true",
+	coverimage: "LAZONABANNER.png",
+	usevisualizer: "fake",
+	coverstyle: "animated",
+	visualizertype: "6",
+	multicolorvisualizer: "true",
+    color1: "f6f6f6",
+    color2: "323edd",
+    color3: "fc5404",
+    color4: "#fa225b",
+	itunestoken: "1000lIPN",
+	metadatatechnic: "corsproxy",
+	ownmetadataurl: "",
+	streamurl: "https://stream.zeno.fm:443/idqecp6rhbnvv.mp3",
+	streamtype: "radiozeno",
+	icecastmountpoint: "/radio.mp3",
+	radionomyid: "",
+	radionomyapikey: "",
+	radiozenoid: "eypgq8m08wquv",
+	radiojarid: "",
+	radiocoid: "",
+	shoutcastpath: "/stream",
+	shoutcastid: "1",
+	streamsuffix: "",
+	metadatainterval: "20000",
+	volume: "85",
+	debug: "false",
 	usestreamcorsproxy: "false", 
-	corsproxy: "https://html5radioplayer7eu.herokuapp.com/?q=",
-	});
+	corsproxy: "https://corsradio.herokuapp.com/index.php?q=",
+	autoplay:"true",
 });
-</script>	
-
+</script>					
+<script src="https://ajax.cloudflare.com/cdn-cgi/scripts/7089c43e/cloudflare-static/rocket-loader.min.js" data-cf-settings="3bc5e4e5245e387f3290c38f-|49" defer=""></script>
 </body>
 </html>
-</body>
 
-</html>
