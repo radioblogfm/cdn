@@ -1,0 +1,139 @@
+
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<meta charset="utf-8">
+<title>playlisthistory</title>
+<meta name="description" content="La Zona">
+<meta name="robots" content="index, follow">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+
+
+<script type="text/javascript" src="https://players.rcast.net/assets/players/playlisthistory/jquery-3.3.1.min.js"></script>
+<style>
+@import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700');
+ .serverhistory .history-now {
+	width: 100%;
+	background-color: rgba(0, 0, 0, 0);
+	font-family: 'Roboto Condensed', Arial, sans-serif;
+	position: relative;
+	margin: 0 auto;
+	overflow: hidden
+}
+.serverhistory .history-wpr {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	margin: 22px auto 0;
+	z-index: 5
+}
+.serverhistory .history-title {
+	font-size: 28px;
+	color: rgba(35, 42, 49, 1);
+	margin: 0 22px 15px;
+	padding-bottom: 5px;
+	border-bottom: 1px solid rgba(35, 42, 49, .7)
+}
+.serverhistory .row-wpr {
+	height: 52px;
+	background-color: rgba(232, 225, 237, .2);
+	position: relative;
+	margin: 0 0 4px;
+	border-radius: 5px
+}
+.serverhistory .history-cover {
+	width: 52px;
+	height: 100%;
+	position: absolute;
+	border-top-left-radius: 5px;
+	border-bottom-left-radius: 5px;
+	display:none;
+}
+.history-track-info {
+	text-align: left;
+	padding-left: 10px;
+	padding-top: 6px
+}
+.serverhistory .rowNum,
+.serverhistory .social-share-wpr {
+	text-align: center;
+	position: absolute;
+	right: 14px
+}
+.serverhistory .history-songtitle {
+	font-size: 19px;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	color: rgba(35, 42, 49, 1)
+}
+.serverhistory .history-artist-name {
+	font-size: 16px;
+	color: rgba(35, 42, 49, .7)
+}
+
+.serverhistory .history-songtitle a {
+	text-decoration: none;
+	color: rgba(35, 42, 49, 1)
+}
+.serverhistory .history-artist-name a {
+	text-decoration: none;
+	color: rgba(35, 42, 49, .7)
+}
+
+
+.serverhistory .rowNum {
+	width: 38px;
+	height: 50px;
+	font-size: 42px;
+	color: rgba(35, 42, 49, .2);
+	top: 2px
+}
+
+
+
+.serverhistory .history-songtitle a {
+    color: rgba(255,255,255,1)!important;
+}
+.serverhistory .history-artist-name a {
+    color: rgba(255,255,255, 0.7)!important;
+}
+
+.serverhistory .history-songtitle {
+    color: rgba(255,255,255,1)!important;
+}
+.serverhistory .history-artist-name {
+    color: rgba(255,255,255, 0.7)!important;
+}
+.serverhistory .rowNum {
+    color: rgba(255,255,255, 0.5)!important;
+}
+.serverhistory .row-wpr {
+    background-color: rgba(255,7,50,1)!important;
+}
+</style>
+</head>
+<body style="background-color:rgba(0,0,0,0);color:rgba(255,255,255,1);margin: 0;">
+<div class="serverhistory" id="rcastplayer" align="center"></div>
+<script type="text/javascript" src="https://players.rcast.net/assets/players/playlisthistory/playlisthistory5.min.js"></script>
+<script> 
+$("#rcastplayer").serverhistory({ 
+URL: "https://stream.zeno.fm:443/idqecp6rhbnvv.mp3", 
+artworkurl: "https://artwork.rcast.net/62807",
+statusurl: "https://status.rcast.net/62807",
+playlisturl: "https://playlist.rcast.net/62807",
+logo: "https://players.rcast.net/uploads/images/202307/img_x300_64aa1ef75fc754-14818129-10428916.png", 
+servertitle: "LA ZONA",
+sid: "62807",
+updateinterval: 62000,
+amazon_aff_active: true,
+amazon_aff: "rcast-20"
+}) 
+</script>
+
+</body>
+</html>
