@@ -13,7 +13,9 @@
 <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
 <meta name="robots" content="noindex, nofollow" />
 
+<link rel="stylesheet" href="/swiper.min.css">
 
+<script src="/swiper.min.js"></script>
 	
 </head>
 <body oncontextmenu="return false" onkeydown="return false">
@@ -69,6 +71,25 @@ else if (hora >= 16 && hora < 24 && dia > 0 && dia < 6) {
 	
 	
 </script>
+	<script>
+    var swiper = new Swiper('.swiper-container', {
+      
+      slidesPerView: 'auto',
+     // centeredSlides: true,
+ initialSlide: 0,
+	spaceBetween: 1,
+	   direction: 'horizontal',
+	   grabCursor: false,
+	  freeMode: true,
+	   autoHeight:false,
+	   loop: false,
+	  navigation: {
+        nextEl: '.swiper-button-next'
+      },
+  
+      mousewheel: true,
+    });
+  </script>
 </center>
 </body>
 </html>
