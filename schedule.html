@@ -6,479 +6,69 @@
 <meta content="300;url=https://cdn.lazona.ar/schedule.html" http-equiv="refresh">
  <link rel= "stylesheet" type= "text/css" herf= "http.//fonts.googleapis.com/css 
  family=Capriola">
+	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet"/>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 <meta name="robots" content="noindex,nofollow">
 <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
-<link rel="stylesheet" href="/swiper.min.css">
 <meta name="robots" content="noindex, nofollow" />
 <script src="/swiper.min.js"></script>
-<style type="text/css">
-
-@font-face {font-family: "Capriola";
-font-display: swap;
-  src: url("/templates/hiperrivadavia/asset/fonts/unisans-bold/unibold.eot"); /* IE9*/
-  src: url("/templates/hiperrivadavia/asset/fonts/unisans-bold/unibold.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
-  url("/templates/hiperrivadavia/asset/fonts/unisans-bold/unibold.woff2") format("woff2"), /* chrome、firefox */
-  url("/templates/hiperrivadavia/asset/fonts/unisans-bold/unibold.woff") format("woff"), /* chrome、firefox */
-  url("/templates/hiperrivadavia/asset/fonts/unisans-bold/unibold.ttf") format("truetype"), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
-  url("/templates/hiperrivadavia/asset/fonts/unisans-bold/unibold.svg#Uni Sans Bold") format("svg"); /* iOS 4.1- */
-}
-@font-face {font-family: "Capriola";
-font-display: swap;
-  src: url("/templates/hiperrivadavia/asset/fonts/unisans-regular/uniregular.eot"); /* IE9*/
-  src: url("/templates/hiperrivadavia/asset/fonts/unisans-regular/uniregular.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
-  url("/templates/hiperrivadavia/asset/fonts/unisans-regular/uniregular.woff2") format("woff2"), /* chrome、firefox */
-  url("/templates/hiperrivadavia/asset/fonts/unisans-regular/uniregular.woff") format("woff"), /* chrome、firefox */
-  url("/templates/hiperrivadavia/asset/fonts/unisans-regular/uniregular.ttf") format("truetype"), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
-  url("/templates/hiperrivadavia/asset/fonts/unisans-regular/uniregular.svg#Uni Sans Regular") format("svg"); /* iOS 4.1- */
-}
-
-
-body {
-    padding: 0 !important;
-    margin: 0 !important;
-}
-
-.swiper-container {
-	  font-family:'Capriola', sans-serif;
-    width: 100%;
-    height: auto;    
-      background:#ffffff;
-  
-}
-img.am {
-    max-width: 243px;
-    vertical-align: middle;
-    padding: 26px 0px 0px;
-    right: 0;
-    text-align: right;
-    float: right;
-}
-    .swiper-slide {
-      text-align: left;
-      font-size: 18px;
-      background: transparent;
-
-      /* Center slide text vertically */
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: -webkit-flex;
-      display: flex;
-      -webkit-box-pack: center;
-      -ms-flex-pack: center;
-      -webkit-justify-content: center;
-          justify-content: flex-start; /*justify-content: center;*/
-      -webkit-box-align: center;
-      -ms-flex-align: center;
-      -webkit-align-items: center;
-      align-items: center;
-      width: auto;
-   max-width: 720px;
-    background: url(back_sch.png);
-    padding: 0px 10px 0px 5px;
-    border: 0;
-    background-size: cover;
-    margin-right: 0px !important;
-	/*min-width: 455px;*/
-    }
-	.swiper-wrapper {
-    height: 230px;
-}
-	    .swiper-button-prev {
-    display: none;
-}
-.swiper-scrollbar {
-    display: none;
-}
-	.swiper-button-next {
-color:#FFF476;padding:0px 5px;
-    bottom: 0 !important;
-    position: absolute;
-    margin-top: auto !important;
-    right: 0px;height:100%;
-    background: #000;
-}
-	
-	.play {
-    float: left;
-    color: #fff;
-    font-size: 25px;
-}
-	span.bajo {
-    font-size: 12px;
-    text-transform: none;
-    display: block;
-    color: #eee;
-    font-style: italic;
-    font-weight: normal;
-}
-.programa {
-    color: #303030;
-    font-size: 18px;
-    line-height: 20px;
-    margin-right: 0px;
-    text-transform: uppercase;
-    display: table-cell;
-    text-align: left;
-    padding: 0px 7px;order: 1;
-}
-
-.conduccion {
-    color: #303030;
-    font-size: 26px;
-	line-height:30px;
-    text-transform: uppercase;
-    margin: 0px 7px;
-width: fit-content;
-    text-align: left;
-    margin-bottom: 1px;
-	font-family: 'Uni Sans Bold', sans-serif;
-	    order: 2;
-}
-  
-.horario {
-    color: #303030;
-    text-align: left;
-    font-size: 14px;
-    margin-bottom: 0;
-    line-height: 16px;
-    padding: 2px 0px 0px 0px;
-    display: table; order:3;border-bottom: 1px solid #303030;
-    width: fit-content;
-    margin-left: 7px;
-}
-
-
-.programaDSC { color:#383838; padding-top: 8px; 
-    padding-left: 20px;}
-
-.descripcion {
-  color: #303030;
-  float: left;
-    padding-left: 20px;
-  font-size: 13px;
-    margin: 10px 0px 5px 0px;
-  margin-right: 10px;max-width:45%;
-  
-    max-height: 50px;
-    overflow: hidden;
-}
-
-.link { }
-
-.link a {
-  color: #303030;
-  font-size: 10px;
-  text-decoration: none;
-    display: none;
-}
-
-.link a:hover { text-decoration:none;font-size:10px; color:#fff }
-
-.ahora .data {text-transform:uppercase;
-    padding: 17px 5px 0px;
-    position: relative;
-    overflow: hidden;
-}
-.data {text-transform:uppercase;
-    padding: 70px 30px 0px 0px;
-    display:block;
-    position: relative;
-    overflow: hidden;
-    display: grid;
-    grid-template-columns: auto;
-}
-
-.prI img{
-	
-height: auto; text-align: center; display: block; 
-object-fit: cover; height:auto; width:100%;  margin-top:0px;
-    margin-left: 0px;float: left;
-	
-	/*transform: scale(0.87);
-  max-width: 185px;*/
-}
-	
-.swiper-button-next:focus {
-    box-shadow: none !important;
-    border: 0px solid !important;
-    outline: none !important;
-}
-.swiper-button-next:hover {  color:#fff;
-}
-.descripcion a {
-    
-    background: #9C9C9C !important; color:#fff;
-    margin-top: 5px;
-    text-decoration: none;margin-left:10px;
-    padding:5px;border-radius:5px;
-}
-.descripcion a:hover {
-    background: #F09A2D;
-}
-.descripcion.libre {
-    margin-top: 30px;overflow: inherit;
-}
-.prI {
-    display: block;
-
-    float: right;
-    overflow: hidden;
-    padding-top: 0px;
-}
-.ahora .prog {
-    float: right;
-}
-
-.ahora .titulo {
-    display: block;
-    color: #303030 !important;
-    line-height: 22px;
-    font-size: 26px;
-    text-transform: uppercase;
-    text-decoration: none;
-    margin-bottom: 20px;
-    font-weight: 500;
-    height: 25px;
-    margin-top: 20px;
-    padding: 0px 7px !important;
-}
-.titulo{
-	font-size:10px; 
-    font-weight: 600;
-    color: #303030 ;
-    display: table-row;
-    text-align: left;
-    height: 1px;
-    margin-bottom: 5px;
-	
-	}
-.slid.ahora {
-   /* min-width: 365px;*/
-    position: relative;
-    display: block;
-    float: left;
-}
-.slid {
-    position: relative;
-    display: block;
-    float: left;
-    padding:5px 0px 0px 0px;
-}
-
-.titulo img {
-    width: 30px;
-    margin-top: -5px;
-    margin-left: 10px;
-}
-
-.titulo img:hover{
-opacity:0.8;
-}
-.prog {
-    display: block;
-  
-}
-
-.swiper-button-next:after, .swiper-container-rtl .swiper-button-prev:after {
-    font-size: 28px;
-}
-
-
-.horario.lib {
-    margin-top: -25px;
-}
-
-.horario.fifa {
-    margin-top: -40px;
-}
-.titulo.parpadea.fifa {
-    margin-top: -11px !important;
-    margin-bottom: 10px;
-}
-
-
-/*@media (min-width: 1600px) and (max-width: 1900px){
-	.slid {
-    min-width: 200px;
-}
-}
-	
-@media (min-width: 1900px){
-	.slid {
-    min-width: 250px;
-}
-}*/
-
-
-@media (max-width:480px){
-.ahora .prI , .prI img {
-    display: none !important;
-}
-.mobi{
-    margin-top:40px;
-}
-.slid {
-    margin-bottom: 125px;
-}
-.swiper-button-next {
-    height: 43px !important;
-    background: #000;
-}
-.horario.lib {
-    margin-top: 0px !important;
-}
-.horario.fifa {
-    margin-top: 0px;
-}
-.titulo.parpadea.fifa {
-margin-top: 36px !important;
-}
-.swiper-slide {
-    min-width: -webkit-fill-available;
-}
-
-
-}
-
-.slid:hover {
-    cursor: move;
-}
-
-.parpadea {
-  
-  animation-name: parpadeo;
-  animation-duration: 1.5s;
-  animation-timing-function: linear;
-  animation-iteration-count: infinite;
-
-  -webkit-animation-name:parpadeo;
-  -webkit-animation-duration: 1.5s;
-  -webkit-animation-timing-function: linear;
-  -webkit-animation-iteration-count: infinite;
-    padding: 0 !important;
-    margin: 0;
-    font-weight: bold;
-}
-@-moz-keyframes parpadeo{  
-  0% { opacity: 1.0; }
-  50% { opacity: 0.0; }
-  100% { opacity: 1.0; }
-}
-
-@-webkit-keyframes parpadeo {  
-  0% { opacity: 1.0; }
-  50% { opacity: 0.0; }
-   100% { opacity: 1.0; }
-}
-
-@keyframes parpadeo {  
-  0% { opacity: 1.0; }
-   50% { opacity: 0.0; }
-  100% { opacity: 1.0; }
-}</style>
 
 	
 </head>
 <body oncontextmenu="return false" onkeydown="return false">
-<script type="text/javascript">
+<center><script type="text/javascript">
 var hoy = new Date(),
     dia = hoy.getDay(),
     hora = hoy.getHours();
 	minutos = hoy.getMinutes();
 
-// Lunes a Viernes 0 a 3 - AUTODJ
 
-if (hora >= 0 && hora < 3 && dia > 0 && dia < 6) {document.write('<div class="swiper-container">  <div class="swiper-wrapper">   <div class="swiper-slide">  <div class="slid ahora"  >     <div class="prog"> <div class="prI"><a class="itemImage" title="Ahora"  ><img alt="Programa" src="https://cdn.lazona.ar/images/autodj_per.png"></a></div> <div class="data"> <div class="titulo parpadea">AHORA</div><div class="horario">La mejor Programacion</div><div class="conduccion">LAZONA.AR</div><div class="programa">AUTODJ</div>  </div> </div>   </div>  </div> <div class="swiper-slide">   <div class="slid">  <div class="prog"> <div class="prI"><a class="itemImage" title="Ahora"><img alt="Programa" src="https://cdn.lazona.ar/images/anita_per.png"></a></div> <div class="data"> <div class="titulo">&nbsp;</div> <div class="horario">Lunes a Sabados 03 a 07 hs</div><div class="conduccion">Anita</div><div class="programa">NightShow</div>  </div> </div> </div>  </div><div class="swiper-slide">   <div class="slid">  <div class="prog">  <div class="prI"><a class="itemImage" title="Ahora"><img alt="Programa" src="https://cdn.lazona.ar/images/cath_per.png"></a></div> <div class="data"> <div class="titulo">&nbsp;</div> <div class="horario">Lunes a Viernes 07 a 12 hs</div> <div class="conduccion">Cath</div><div class="programa">RadioCath</div>  </div> </div> </div>  </div><div class="swiper-slide">  <div class="slid ahora"  >     <div class="prog"> <div class="prI"><a class="itemImage" title="Ahora"  ><img alt="Programa" src="https://cdn.lazona.ar/images/autodj_per.png"></a></div> <div class="data"> <div class="titulo parpadea">AHORA</div><div class="horario">La mejor Programacion</div><div class="conduccion">LAZONA.AR</div><div class="programa">AUTODJ</div>  </div> </div>   </div>  </div> <div class="swiper-pagination">&nbsp;</div>  <div class="swiper-button-prev">&nbsp;</div> <div class="swiper-button-next">&nbsp;</div>  <div class="swiper-scrollbar">&nbsp;</div> </div>  ');
+if (hora >= 0 && hora < 3 &&  dia > 0 && dia < 6) {document.write('<picture><img class="hidden-xs img-responsive"  src="lzd2.png">
+<img class="visible-xs" src="lzd2.png">
+</picture> ');
 }
 
 
-	// Lunes a Viernes 3 a 7 - NightShow
+	// Lunes a Viernes 1 a 4 - ANITA
 	
 else if (hora >= 3 && hora < 7 && dia > 0 && dia < 6) {
-	document.write('<div class="swiper-container">  <div class="swiper-wrapper">  <div class="swiper-slide">   <div class="slid">  <div class="prog"> <div class="prI"><a class="itemImage" title="Ahora"><img alt="Programa" src="https://cdn.lazona.ar/images/anita_per.png"></a></div> <div class="data"> <div class="titulo parpadea">AHORA</div> <div class="horario">Lunes a Sabados 03 a 07 hs</div><div class="conduccion">Anita</div><div class="programa">NightShow</div>  </div> </div> </div>  </div> <div class="swiper-slide">   <div class="slid">  <div class="prog">  <div class="prI"><a class="itemImage" title="Ahora"><img alt="Programa" src="https://cdn.lazona.ar/images/cath_per.png"></a></div> <div class="data"> <div class="titulo">&nbsp;</div> <div class="horario">Lunes a Viernes 07 a 12 hs</div> <div class="conduccion">Cath</div><div class="programa">RadioCath</div>  </div> </div> </div>  </div><div class="swiper-slide">  <div class="slid ahora"  >     <div class="prog"> <div class="prI"><a class="itemImage" title="Ahora"  ><img alt="Programa" src="https://cdn.lazona.ar/images/autodj_per.png"></a></div> <div class="data"> <div class="titulo">&nbsp;</div><div class="horario">La mejor Programacion</div><div class="conduccion">LAZONA.AR</div><div class="programa">AUTODJ</div>  </div> </div>   </div>  </div> <div class="swiper-pagination">&nbsp;</div>  <div class="swiper-button-prev">&nbsp;</div> <div class="swiper-button-next">&nbsp;</div>  <div class="swiper-scrollbar">&nbsp;</div> </div> ');
+	document.write('<picture><img class="hidden-xs img-responsive"  src="program_n_anita.png">
+<img class="visible-xs" src="program_n_anita.png">
+</picture> ');
+}
 
-	
-
-//L a v 7 a 12 - RADIO CATH
+	//L a V 7 a 12 - CATH
  if (hora >= 7 && hora < 12 && dia > 0 && dia < 6) {
-	document.write('<div class="swiper-container">  <div class="swiper-wrapper">  <div class="swiper-slide">   <div class="slid">  <div class="prog"> <div class="prI"><a class="itemImage" title="Ahora"><img alt="Programa" src="https://cdn.lazona.ar/images/cath_per.png"></a></div> <div class="data"> <div class="titulo parpadea">AHORA</div> <div class="horario">Lunes a Viernes 07 a 12 hs</div><div class="conduccion">Cath</div><div class="programa">RadioCath</div>  </div> </div> </div>  </div> <div class="swiper-slide">   <div class="slid">  <div class="prog">  <div class="prI"><a class="itemImage" title="Ahora"><img alt="Programa" src="https://cdn.lazona.ar/images/autodj_per.png"></a></div> <div class="data"> <div class="titulo">&nbsp;</div> <div class="horario">La mejor Programacion</div> <div class="conduccion">LAZONA.AR</div><div class="programa">AutoDJ</div>  </div> </div> </div>  </div><div class="swiper-slide">  <div class="slid ahora"  >     <div class="prog"> <div class="prI"><a class="itemImage" title="Ahora"  ><img alt="Programa" src="https://cdn.lazona.ar/images/anita_per.png"></a></div> <div class="data"> <div class="titulo">&nbsp;</div><div class="horario">Lunes a Sabados 03 a 07 hs</div><div class="conduccion">Anita</div><div class="programa">NightShow</div>  </div> </div>   </div>  </div> <div class="swiper-pagination">&nbsp;</div>  <div class="swiper-button-prev">&nbsp;</div> <div class="swiper-button-next">&nbsp;</div>  <div class="swiper-scrollbar">&nbsp;</div> </div> ');
+	document.write('<picture><img class="hidden-xs img-responsive"  src="program_n_cath.png">
+<img class="visible-xs" src="program_n_cath.png">
+</picture> ');
 }
-	
-	//
+
+//L a v 12 a 14 - LAZONA
 else if (hora >= 12 && hora < 14 && dia > 0 && dia < 6) {
-	document.write('<div class="swiper-container">  <div class="swiper-wrapper">  <div class="swiper-wrapper">   <div class="swiper-slide">  <div class="slid ahora"  >     <div class="prog"> <div class="prI"><a class="itemImage" title="Ahora"  ><img alt="Programa" src="https://cdn.lazona.ar/images/autodj_per.png"></a></div> <div class="data"> <div class="titulo parpadea">AHORA</div><div class="horario">La mejor Programacion</div><div class="conduccion">LAZONA.AR</div><div class="programa">AUTODJ</div>  </div> </div>   </div>  </div> <div class="swiper-slide">   <div class="slid">  <div class="prog"> <div class="prI"><a class="itemImage" title="Ahora"><img alt="Programa" src="https://cdn.lazona.ar/images/anita_per.png"></a></div> <div class="data"> <div class="titulo">&nbsp;</div> <div class="horario">Lunes a Sabados 03 a 07 hs</div><div class="conduccion">Anita</div><div class="programa">NightShow</div>  </div> </div> </div>  </div><div class="swiper-slide">   <div class="slid">  <div class="prog">  <div class="prI"><a class="itemImage" title="Ahora"><img alt="Programa" src="https://cdn.lazona.ar/images/cath_per.png"></a></div> <div class="data"> <div class="titulo">&nbsp;</div> <div class="horario">Lunes a Viernes 07 a 12 hs</div> <div class="conduccion">Cath</div><div class="programa">RadioCath</div>  </div> </div> </div>  </div><div class="swiper-slide">  <div class="slid ahora"  >     <div class="prog"> <div class="prI"><a class="itemImage" title="Ahora"  ><img alt="Programa" src="https://cdn.lazona.ar/images/autodj_per.png"></a></div> <div class="data"> <div class="titulo parpadea">AHORA</div><div class="horario">La mejor Programacion</div><div class="conduccion">LAZONA.AR</div><div class="programa">AUTODJ</div>  </div> </div>   </div>  </div> <div class="swiper-pagination">&nbsp;</div>  <div class="swiper-button-prev">&nbsp;</div> <div class="swiper-button-next">&nbsp;</div>  <div class="swiper-scrollbar">&nbsp;</div> </div> ');
+	document.write('<picture><img class="hidden-xs img-responsive"  src="top40.png">
+<img class="visible-xs" src="top40.png">
+</picture> ');
+}
+	
+	//L a v 14 a 16 - JONA
+ if (hora >= 14 && hora < 16 && dia > 0 && dia < 6) {
+	document.write('<picture><img class="hidden-xs img-responsive"  src="enconexion.png">
+<img class="visible-xs" src="enconexion.png">
+</picture> ');
 }
 
 
-//L a v 14 a 18 
-if (hora >= 14 && hora < 18 && dia > 0 && dia < 6) {
-	document.write('<div class="swiper-container">  <div class="swiper-wrapper">   <div class="swiper-wrapper">   <div class="swiper-slide">  <div class="slid ahora"  >     <div class="prog"> <div class="prI"><a class="itemImage" title="Ahora"  ><img alt="Programa" src="https://cdn.lazona.ar/images/autodj_per.png"></a></div> <div class="data"> <div class="titulo parpadea">AHORA</div><div class="horario">La mejor Programacion</div><div class="conduccion">LAZONA.AR</div><div class="programa">AUTODJ</div>  </div> </div>   </div>  </div> <div class="swiper-slide">   <div class="slid">  <div class="prog"> <div class="prI"><a class="itemImage" title="Ahora"><img alt="Programa" src="https://cdn.lazona.ar/images/anita_per.png"></a></div> <div class="data"> <div class="titulo">&nbsp;</div> <div class="horario">Lunes a Sabados 03 a 07 hs</div><div class="conduccion">Anita</div><div class="programa">NightShow</div>  </div> </div> </div>  </div><div class="swiper-slide">   <div class="slid">  <div class="prog">  <div class="prI"><a class="itemImage" title="Ahora"><img alt="Programa" src="https://cdn.lazona.ar/images/cath_per.png"></a></div> <div class="data"> <div class="titulo">&nbsp;</div> <div class="horario">Lunes a Viernes 07 a 12 hs</div> <div class="conduccion">Cath</div><div class="programa">RadioCath</div>  </div> </div> </div>  </div><div class="swiper-slide">  <div class="slid ahora"  >     <div class="prog"> <div class="prI"><a class="itemImage" title="Ahora"  ><img alt="Programa" src="https://cdn.lazona.ar/images/autodj_per.png"></a></div> <div class="data"> <div class="titulo parpadea">AHORA</div><div class="horario">La mejor Programacion</div><div class="conduccion">LAZONA.AR</div><div class="programa">AUTODJ</div>  </div> </div>   </div>  </div> <div class="swiper-pagination">&nbsp;</div>  <div class="swiper-button-prev">&nbsp;</div> <div class="swiper-button-next">&nbsp;</div>  <div class="swiper-scrollbar">&nbsp;</div> </div> ');
+//L a v 16 a 24 - lazona
+else if (hora >= 16 && hora < 24 && dia > 0 && dia < 6) {
+	document.write('<picture><img class="hidden-xs img-responsive"  src="lzd1.png">
+<img class="visible-xs" src="lzd1.png">
+</picture> ');
 }
 	
-	
-//LUNES A JUEVES > L a v 14 a 16 
-else if (hora >= 14 && hora < 18 && dia > 0 && dia < 5) {
-	document.write('<div class="swiper-container">  <div class="swiper-wrapper">   <div class="swiper-wrapper">   <div class="swiper-slide">  <div class="slid ahora"  >     <div class="prog"> <div class="prI"><a class="itemImage" title="Ahora"  ><img alt="Programa" src="https://cdn.lazona.ar/images/autodj_per.png"></a></div> <div class="data"> <div class="titulo parpadea">AHORA</div><div class="horario">La mejor Programacion</div><div class="conduccion">LAZONA.AR</div><div class="programa">AUTODJ</div>  </div> </div>   </div>  </div> <div class="swiper-slide">   <div class="slid">  <div class="prog"> <div class="prI"><a class="itemImage" title="Ahora"><img alt="Programa" src="https://cdn.lazona.ar/images/anita_per.png"></a></div> <div class="data"> <div class="titulo">&nbsp;</div> <div class="horario">Lunes a Sabados 03 a 07 hs</div><div class="conduccion">Anita</div><div class="programa">NightShow</div>  </div> </div> </div>  </div><div class="swiper-slide">   <div class="slid">  <div class="prog">  <div class="prI"><a class="itemImage" title="Ahora"><img alt="Programa" src="https://cdn.lazona.ar/images/cath_per.png"></a></div> <div class="data"> <div class="titulo">&nbsp;</div> <div class="horario">Lunes a Viernes 07 a 12 hs</div> <div class="conduccion">Cath</div><div class="programa">RadioCath</div>  </div> </div> </div>  </div><div class="swiper-slide">  <div class="slid ahora"  >     <div class="prog"> <div class="prI"><a class="itemImage" title="Ahora"  ><img alt="Programa" src="https://cdn.lazona.ar/images/autodj_per.png"></a></div> <div class="data"> <div class="titulo parpadea">AHORA</div><div class="horario">La mejor Programacion</div><div class="conduccion">LAZONA.AR</div><div class="programa">AUTODJ</div>  </div> </div>   </div>  </div> <div class="swiper-pagination">&nbsp;</div>  <div class="swiper-button-prev">&nbsp;</div> <div class="swiper-button-next">&nbsp;</div>  <div class="swiper-scrollbar">&nbsp;</div> </div> ');
-}
-	
-	
-//LUNES A JUEVES > L a v 18 a 24 
-if (hora >= 18 && hora < 24 && dia > 0 && dia < 5) {
-	document.write('<div class="swiper-container">  <div class="swiper-wrapper">   <div class="swiper-wrapper">   <div class="swiper-slide">  <div class="slid ahora"  >     <div class="prog"> <div class="prI"><a class="itemImage" title="Ahora"  ><img alt="Programa" src="https://cdn.lazona.ar/images/autodj_per.png"></a></div> <div class="data"> <div class="titulo parpadea">AHORA</div><div class="horario">La mejor Programacion</div><div class="conduccion">LAZONA.AR</div><div class="programa">AUTODJ</div>  </div> </div>   </div>  </div> <div class="swiper-slide">   <div class="slid">  <div class="prog"> <div class="prI"><a class="itemImage" title="Ahora"><img alt="Programa" src="https://cdn.lazona.ar/images/anita_per.png"></a></div> <div class="data"> <div class="titulo">&nbsp;</div> <div class="horario">Lunes a Sabados 03 a 07 hs</div><div class="conduccion">Anita</div><div class="programa">NightShow</div>  </div> </div> </div>  </div><div class="swiper-slide">   <div class="slid">  <div class="prog">  <div class="prI"><a class="itemImage" title="Ahora"><img alt="Programa" src="https://cdn.lazona.ar/images/cath_per.png"></a></div> <div class="data"> <div class="titulo">&nbsp;</div> <div class="horario">Lunes a Viernes 07 a 12 hs</div> <div class="conduccion">Cath</div><div class="programa">RadioCath</div>  </div> </div> </div>  </div><div class="swiper-slide">  <div class="slid ahora"  >     <div class="prog"> <div class="prI"><a class="itemImage" title="Ahora"  ><img alt="Programa" src="https://cdn.lazona.ar/images/autodj_per.png"></a></div> <div class="data"> <div class="titulo parpadea">AHORA</div><div class="horario">La mejor Programacion</div><div class="conduccion">LAZONA.AR</div><div class="programa">AUTODJ</div>  </div> </div>   </div>  </div> <div class="swiper-pagination">&nbsp;</div>  <div class="swiper-button-prev">&nbsp;</div> <div class="swiper-button-next">&nbsp;</div>  <div class="swiper-scrollbar">&nbsp;</div> </div>  ');
-}
-	
-	
-
-	
-//Sábados > 00 a 03 - WEEKEND
-else if (hora >= 0 && hora < 3 && dia == 6) {
-	document.write('<div class="swiper-container">  <div class="swiper-wrapper">   <div class="swiper-wrapper">   <div class="swiper-slide">  <div class="slid ahora"  >     <div class="prog"> <div class="prI"><a class="itemImage" title="Ahora"  ><img alt="Programa" src="https://cdn.lazona.ar/images/autodj_per.png"></a></div> <div class="data"> <div class="titulo parpadea">AHORA</div><div class="horario">SABADOS 00 A 03 HS </div><div class="conduccion">LO MEJOR PARA TU PREVIA</div><div class="programa">ZONA WEEK</div>  </div> </div>   </div>  </div> <div class="swiper-slide">   <div class="slid">  <div class="prog"> <div class="prI"><a class="itemImage" title="Ahora"><img alt="Programa" src="https://cdn.lazona.ar/images/anita_per.png"></a></div> <div class="data"> <div class="titulo">&nbsp;</div> <div class="horario">Lunes a Sabados 03 a 07 hs</div><div class="conduccion">Anita</div><div class="programa">NightShow</div>  </div> </div> </div>  </div><div class="swiper-slide">  <div class="slid ahora"  >     <div class="prog"> <div class="prI"><a class="itemImage" title="Ahora"  ><img alt="Programa" src="https://cdn.lazona.ar/images/autodj_per.png"></a></div> <div class="data"> <div class="titulo parpadea">AHORA</div><div class="horario">La mejor Programacion</div><div class="conduccion">LAZONA.AR</div><div class="programa">AUTODJ</div>  </div> </div>   </div>  </div> <div class="swiper-slide">   <div class="slid">  <div class="prog"> <div class="prI"><a class="itemImage" title="Ahora"><img alt="Programa" src="https://cdn.lazona.ar/images/anita_per.png"></a></div> <div class="data"> <div class="titulo">&nbsp;</div> <div class="horario">Lunes a Sabados 03 a 07 hs</div><div class="conduccion">Anita</div><div class="programa">NightShow</div>  </div> </div> </div>  </div><div class="swiper-slide">   <div class="slid">  <div class="prog">  <div class="prI"><a class="itemImage" title="Ahora"><img alt="Programa" src="https://cdn.lazona.ar/images/cath_per.png"></a></div> <div class="data"> <div class="titulo">&nbsp;</div> <div class="horario">Lunes a Viernes 07 a 12 hs</div> <div class="conduccion">Cath</div><div class="programa">RadioCath</div>  </div> </div> </div>  </div><div class="swiper-slide">  <div class="slid ahora"  >     <div class="prog"> <div class="prI"><a class="itemImage" title="Ahora"  ><img alt="Programa" src="https://cdn.lazona.ar/images/autodj_per.png"></a></div> <div class="data"> <div class="titulo parpadea">AHORA</div><div class="horario">La mejor Programacion</div><div class="conduccion">LAZONA.AR</div><div class="programa">AUTODJ</div>  </div> </div>   </div>  </div> <div class="swiper-pagination">&nbsp;</div>  <div class="swiper-button-prev">&nbsp;</div> <div class="swiper-button-next">&nbsp;</div>  <div class="swiper-scrollbar">&nbsp;</div> </div> ');
-}
-	
-	
-	
-	
-//Sábados > 03 a 07 - anita
-if (hora >= 3 && hora < 7 && dia == 6) {
-	document.write('<div class="swiper-container">  <div class="swiper-wrapper">   <div class="swiper-slide">   <div class="slid">  <div class="prog"> <div class="prI"><a class="itemImage" title="Ahora"><img alt="Programa" src="https://cdn.lazona.ar/images/anita_per.png"></a></div> <div class="data"> <div class="titulo">&nbsp;</div> <div class="horario">Lunes a Sabados 03 a 07 hs</div><div class="conduccion">Anita</div><div class="programa">NightShow</div>  </div> </div> </div>  </div><div class="swiper-slide">  <div class="slid ahora"  >     <div class="prog"> <div class="prI"><a class="itemImage" title="Ahora"  ><img alt="Programa" src="https://cdn.lazona.ar/images/autodj_per.png"></a></div> <div class="data"> <div class="titulo parpadea">AHORA</div><div class="horario">La mejor Programacion</div><div class="conduccion">LAZONA.AR</div><div class="programa">AUTODJ</div>  </div> </div>   </div>  </div> <div class="swiper-slide">   <div class="slid">  <div class="prog"> <div class="prI"><a class="itemImage" title="Ahora"><img alt="Programa" src="https://cdn.lazona.ar/images/anita_per.png"></a></div> <div class="data"> <div class="titulo">&nbsp;</div> <div class="horario">Lunes a Sabados 03 a 07 hs</div><div class="conduccion">Anita</div><div class="programa">NightShow</div>  </div> </div> </div>  </div><div class="swiper-slide">   <div class="slid">  <div class="prog">  <div class="prI"><a class="itemImage" title="Ahora"><img alt="Programa" src="https://cdn.lazona.ar/images/cath_per.png"></a></div> <div class="data"> <div class="titulo">&nbsp;</div> <div class="horario">Lunes a Viernes 07 a 12 hs</div> <div class="conduccion">Cath</div><div class="programa">RadioCath</div>  </div> </div> </div>  </div><div class="swiper-slide">  <div class="slid ahora"  >     <div class="prog"> <div class="prI"><a class="itemImage" title="Ahora"  ><img alt="Programa" src="https://cdn.lazona.ar/images/autodj_per.png"></a></div> <div class="data"> <div class="titulo parpadea">AHORA</div><div class="horario">La mejor Programacion</div><div class="conduccion">LAZONA.AR</div><div class="programa">AUTODJ</div>  </div> </div>   </div>  </div> <div class="swiper-pagination">&nbsp;</div>  <div class="swiper-button-prev">&nbsp;</div> <div class="swiper-button-next">&nbsp;</div>  <div class="swiper-scrollbar">&nbsp;</div> </div> ');
-}
-	
-	
-	
-//Sábados > 7 a 24
-else if (hora >= 7 && hora < 24 && dia == 6) {
-	document.write('<div class="swiper-container">  <div class="swiper-wrapper">  <div class="swiper-slide">  <div class="slid ahora"  >     <div class="prog"> <div class="prI"><a class="itemImage" title="Ahora"  ><img alt="Programa" src="https://cdn.lazona.ar/images/autodj_per.png"></a></div> <div class="data"> <div class="titulo parpadea">AHORA</div><div class="horario">La mejor Programacion</div><div class="conduccion">LAZONA.AR</div><div class="programa">AUTODJ</div>  </div> </div>   </div>  </div> <div class="swiper-slide">   <div class="slid">  <div class="prog"> <div class="prI"><a class="itemImage" title="Ahora"><img alt="Programa" src="https://cdn.lazona.ar/images/anita_per.png"></a></div> <div class="data"> <div class="titulo">&nbsp;</div> <div class="horario">Lunes a Sabados 03 a 07 hs</div><div class="conduccion">Anita</div><div class="programa">NightShow</div>  </div> </div> </div>  </div><div class="swiper-slide">  <div class="slid ahora"  >     <div class="prog"> <div class="prI"><a class="itemImage" title="Ahora"  ><img alt="Programa" src="https://cdn.lazona.ar/images/autodj_per.png"></a></div> <div class="data"> <div class="titulo parpadea">AHORA</div><div class="horario">La mejor Programacion</div><div class="conduccion">LAZONA.AR</div><div class="programa">AUTODJ</div>  </div> </div>   </div>  </div> <div class="swiper-slide">   <div class="slid">  <div class="prog"> <div class="prI"><a class="itemImage" title="Ahora"><img alt="Programa" src="https://cdn.lazona.ar/images/anita_per.png"></a></div> <div class="data"> <div class="titulo">&nbsp;</div> <div class="horario">Lunes a Sabados 03 a 07 hs</div><div class="conduccion">Anita</div><div class="programa">NightShow</div>  </div> </div> </div>  </div><div class="swiper-slide">   <div class="slid">  <div class="prog">  <div class="prI"><a class="itemImage" title="Ahora"><img alt="Programa" src="https://cdn.lazona.ar/images/cath_per.png"></a></div> <div class="data"> <div class="titulo">&nbsp;</div> <div class="horario">Lunes a Viernes 07 a 12 hs</div> <div class="conduccion">Cath</div><div class="programa">RadioCath</div>  </div> </div> </div>  </div><div class="swiper-slide">  <div class="slid ahora"  >     <div class="prog"> <div class="prI"><a class="itemImage" title="Ahora"  ><img alt="Programa" src="https://cdn.lazona.ar/images/autodj_per.png"></a></div> <div class="data"> <div class="titulo parpadea">AHORA</div><div class="horario">La mejor Programacion</div><div class="conduccion">LAZONA.AR</div><div class="programa">AUTODJ</div>  </div> </div>   </div>  </div> <div class="swiper-pagination">&nbsp;</div>  <div class="swiper-button-prev">&nbsp;</div> <div class="swiper-button-next">&nbsp;</div>  <div class="swiper-scrollbar">&nbsp;</div> </div>');
-}
-	
-	 
-//Dom > 0 a 24 - LA ZONA
- if (hora >= 0 && hora < 24 && dia == 7) {
-	document.write('<div class="swiper-container">  <div class="swiper-wrapper">  <div class="swiper-slide">  <div class="slid ahora"  >     <div class="prog"> <div class="prI"><a class="itemImage" title="Ahora"  ><img alt="Programa" src="https://cdn.lazona.ar/images/autodj_per.png"></a></div> <div class="data"> <div class="titulo parpadea">AHORA</div><div class="horario">La mejor Programacion</div><div class="conduccion">LAZONA.AR</div><div class="programa">AUTODJ</div>  </div> </div>   </div>  </div> <div class="swiper-slide">   <div class="slid">  <div class="prog"> <div class="prI"><a class="itemImage" title="Ahora"><img alt="Programa" src="https://cdn.lazona.ar/images/anita_per.png"></a></div> <div class="data"> <div class="titulo">&nbsp;</div> <div class="horario">Lunes a Sabados 03 a 07 hs</div><div class="conduccion">Anita</div><div class="programa">NightShow</div>  </div> </div> </div>  </div><div class="swiper-slide">  <div class="slid ahora"  >     <div class="prog"> <div class="prI"><a class="itemImage" title="Ahora"  ><img alt="Programa" src="https://cdn.lazona.ar/images/autodj_per.png"></a></div> <div class="data"> <div class="titulo parpadea">AHORA</div><div class="horario">La mejor Programacion</div><div class="conduccion">LAZONA.AR</div><div class="programa">AUTODJ</div>  </div> </div>   </div>  </div> <div class="swiper-slide">   <div class="slid">  <div class="prog"> <div class="prI"><a class="itemImage" title="Ahora"><img alt="Programa" src="https://cdn.lazona.ar/images/anita_per.png"></a></div> <div class="data"> <div class="titulo">&nbsp;</div> <div class="horario">Lunes a Sabados 03 a 07 hs</div><div class="conduccion">Anita</div><div class="programa">NightShow</div>  </div> </div> </div>  </div><div class="swiper-slide">   <div class="slid">  <div class="prog">  <div class="prI"><a class="itemImage" title="Ahora"><img alt="Programa" src="https://cdn.lazona.ar/images/cath_per.png"></a></div> <div class="data"> <div class="titulo">&nbsp;</div> <div class="horario">Lunes a Viernes 07 a 12 hs</div> <div class="conduccion">Cath</div><div class="programa">RadioCath</div>  </div> </div> </div>  </div><div class="swiper-slide">  <div class="slid ahora"  >     <div class="prog"> <div class="prI"><a class="itemImage" title="Ahora"  ><img alt="Programa" src="https://cdn.lazona.ar/images/autodj_per.png"></a></div> <div class="data"> <div class="titulo parpadea">AHORA</div><div class="horario">La mejor Programacion</div><div class="conduccion">LAZONA.AR</div><div class="programa">AUTODJ</div>  </div> </div>   </div>  </div> <div class="swiper-pagination">&nbsp;</div>  <div class="swiper-button-prev">&nbsp;</div> <div class="swiper-button-next">&nbsp;</div>  <div class="swiper-scrollbar">&nbsp;</div> </div>');
-}	
-
-
-
-
 	
 </script>
-<script>
-    var swiper = new Swiper('.swiper-container', {
-      
-      slidesPerView: 'auto',
-     // centeredSlides: true,
- initialSlide: 0,
-	spaceBetween: 1,
-	   direction: 'horizontal',
-	   grabCursor: false,
-	  freeMode: true,
-	   autoHeight:false,
-	   loop: false,
-	  navigation: {
-        nextEl: '.swiper-button-next'
-      },
-  
-      mousewheel: true,
-    });
-  </script>
+</center>
 </body>
 </html>
